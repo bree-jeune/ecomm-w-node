@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Beauty E-Commerce Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    </head>
+<body>
+
+    <!-- First Tier: Login Modal & Search Bar -->
+<div class="bg-light p-3">
+    <div class="d-flex justify-content-between align-items-center container">
+        <!-- Search Bar -->
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <!-- Login Button triggering Modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Login</button>
+    </div>
+</div>
+
+ <!-- Login Modal -->
+ <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <!--Modal Form-->
+            <form>
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="passwordInput" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+</div>
+
+    <!-- Navigation Start-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Beauty Products Online Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navigation End -->
+
+
+    <!-- About Start -->
+<section id="about-us" class="container mt-5">
+    <h2>About Us</h2>
+    <div class="row">
+        <div class="col-12 about-section">
+            <h4>Our Story</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laboriosam pariatur sunt nulla? Officia aperiam enim, ut repellat earum recusandae sunt odio a, natus dolor in alias pariatur veniam aliquam?</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facere ea, eveniet officia rem illum expedita officiis qui aliquam placeat commodi alias quo blanditiis. Animi quo temporibus in eos laborum!</p>
+        </div>
+        <div class="col-12 about-section">
+            <h4>Our Mission</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A maiores modi quibusdam dicta, aperiam deleniti vitae nulla repellat. Est, reprehenderit pariatur. Sed tempora, doloremque fugit nisi dignissimos eligendi? Nemo, vel.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus nulla itaque hic qui dicta perspiciatis aliquam ab voluptatem aliquid sit. Incidunt iste nostrum officia accusantium, dolor perspiciatis ullam quidem voluptatum?</p>
+        </div>
+        <div class="col-12 about-section">
+            <h4>Our Values</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore veritatis asperiores voluptatem impedit accusantium debitis, quia architecto odit qui aut assumenda. Nobis, corporis! Totam nisi aliquid minus voluptates quos.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet vel obcaecati delectus quam! Assumenda repellendus iure sapiente amet reprehenderit, voluptas totam consequuntur veritatis dolor, optio, sit nisi nihil officiis aperiam!</p>
+        </div>
+        <div class="col-12 about-section">
+            <h4>Our Promise</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consequatur ullam accusantium esse recusandae dolorem modi ut amet at illo eum ipsum facere rerum et debitis, impedit repellat maiores eaque?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eaque assumenda maiores quasi eum, tenetur voluptate nesciunt, repellat blanditiis laudantium, magni autem sequi quis enim sed ullam recusandae ipsum incidunt!</p>
+        </div>
+    </div>
+</section>
+<!-- About End -->
+
+<div><a href="javascript:void(0)" class="back-to-top">Back to Top</a></div>
+
+
+    <!-- Footer Start-->
+    <footer class="pt-4 pb-2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 mb-3">
+                    <h5>Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-black">Home</a></li>
+                        <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-black">About</a></li>
+                        <li class="nav-item mb-2"><a href="products.html" class="nav-link p-0 text-black">Products</a></li>
+                        <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-black">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h5>Location</h5>
+                    <p class="small">123 Main Street<br> Anytown, CA 12345<br>
+                        Tel: (123) 456-7890</p>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-black me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-black me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-black me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-black"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <p class="small">&copy; 2024 Beauty Products Online Store. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End-->
+
+
+    <script>
+
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector(".back-to-top").style.display = "block";
+            } else {
+                document.querySelector(".back-to-top").style.display = "none";
+            }
+        }
+        
+        document.querySelector(".back-to-top").addEventListener("click", function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+        </script>
+    
+</body>
+</html>
